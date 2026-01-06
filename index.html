@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Number Guessing Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game-container">
+    <h1>🎯 Guess the Number</h1>
+    <p class="subtitle">Choose a difficulty and start guessing</p>
+
+    <!-- Difficulty Buttons -->
+    <div class="difficulty">
+        <button data-max="50">Easy</button>
+        <button data-max="100" class="active">Medium</button>
+        <button data-max="500">Hard</button>
+    </div>
+
+    <!-- Input -->
+    <input 
+        type="number" 
+        id="guessInput" 
+        placeholder="Enter your guess"
+        autocomplete="off"
+    >
+
+    <!-- Action Buttons -->
+    <div class="actions">
+        <button id="guessBtn">Guess</button>
+        <button id="restartBtn" class="secondary">Restart</button>
+    </div>
+
+    <!-- Message -->
+    <p id="message">Start guessing…</p>
+
+    <!-- Stats -->
+    <div class="stats">
+        <span>Attempts: <strong id="attempts">0</strong></span>
+        <span>High Score: <strong id="highScore">—</strong></span>
+    </div>
+
+    <!-- History -->
+    <div class="history">
+        <h3>Guess History</h3>
+        <ul id="historyList"></ul>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
