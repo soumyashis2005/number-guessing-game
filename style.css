@@ -121,3 +121,19 @@ button.secondary {
     padding: 4px 0;
     border-bottom: 1px solid #1e293b;
 }
+
+@media (max-width: 480px) {
+    .game-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .difficulty button {
+        font-size: 12px;
+        padding: 6px;
+    }
+}
